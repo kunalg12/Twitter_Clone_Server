@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const JWT_SECERETE = "$uper@12";
-class JMTservices {
+class JWTservices {
     static generatorTokenForUser(user) {
         const payload = {
             id: user === null || user === void 0 ? void 0 : user.id,
@@ -15,4 +15,4 @@ class JMTservices {
         return token;
     }
 }
-exports.default = JMTservices;
+exports.default = JWTservices;

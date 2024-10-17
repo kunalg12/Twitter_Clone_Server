@@ -4,7 +4,7 @@ import JWT from "jsonwebtoken";
 
 const JWT_SECERETE = "$uper@12";
 
-class JMTservices {
+class JWTservices {
   public static generatorTokenForUser(user: User) {
     const payload = {
       id: user?.id,
@@ -16,4 +16,4 @@ class JMTservices {
   }
 }
 
-export default JMTservices;
+export default JWTservices;
